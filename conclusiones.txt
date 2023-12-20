@@ -1,0 +1,10 @@
+Conclusiones
+
+* Estoy utilizando recientemente estas herramientas y me parecen muy interesante genera cucumber un reporte
+donde se puede parametrizar un sin numero de cosas
+
+* Estado dedicandome las noche a realizar la prueba y me a tomado la mano reoslver conflictos entre versiones
+
+* ya entendi como funciona y he podido avanzar y he tratado de hacer en base al conocimiento que tengo de
+la herramienta lo mas parametrizable posible
+
