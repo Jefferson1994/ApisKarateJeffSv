@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/geonames\/get\/petstore-data-get[1.1:22]","start":1703041295344,"end":1703041296702,"title":"src\/test\/java\/geonames\/get\/petstore-data-get[1.1:22] 22:01:35.344-22:01:36.702 Registrar Usuario"},{"id":2,"group":1,"content":"src\/test\/java\/geonames\/get\/petstore-data-get[1.2:23]","start":1703041296709,"end":1703041297003,"title":"src\/test\/java\/geonames\/get\/petstore-data-get[1.2:23] 22:01:36.709-22:01:37.003 Registrar Usuario"},{"id":3,"group":1,"content":"src\/test\/java\/geonames\/get\/petstore-data-get[1.3:24]","start":1703041297008,"end":1703041297296,"title":"src\/test\/java\/geonames\/get\/petstore-data-get[1.3:24] 22:01:37.008-22:01:37.296 Registrar Usuario"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

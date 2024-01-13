@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/apisprueba\/get\/petstore-data-get[1.1:18]","start":1703043449141,"end":1703043450516,"title":"src\/test\/java\/apisprueba\/get\/petstore-data-get[1.1:18] 22:37:29.141-22:37:30.516 Registrar Usuario"},{"id":2,"group":1,"content":"src\/test\/java\/apisprueba\/get\/petstore-data-get[1.2:19]","start":1703043450522,"end":1703043450811,"title":"src\/test\/java\/apisprueba\/get\/petstore-data-get[1.2:19] 22:37:30.522-22:37:30.811 Registrar Usuario"},{"id":3,"group":1,"content":"src\/test\/java\/apisprueba\/get\/petstore-data-get[1.3:20]","start":1703043450817,"end":1703043451095,"title":"src\/test\/java\/apisprueba\/get\/petstore-data-get[1.3:20] 22:37:30.817-22:37:31.095 Registrar Usuario"},{"id":4,"group":1,"content":"src\/test\/java\/apisprueba\/get\/petstore-data-get[2.1:32]","start":1703043451100,"end":1703043451385,"title":"src\/test\/java\/apisprueba\/get\/petstore-data-get[2.1:32] 22:37:31.100-22:37:31.385 Obtener información de un usuario por nombre de usuario","className":"failed"},{"id":5,"group":1,"content":"src\/test\/java\/apisprueba\/get\/petstore-data-get[2.2:33]","start":1703043451389,"end":1703043451673,"title":"src\/test\/java\/apisprueba\/get\/petstore-data-get[2.2:33] 22:37:31.389-22:37:31.673 Obtener información de un usuario por nombre de usuario","className":"failed"},{"id":6,"group":1,"content":"src\/test\/java\/apisprueba\/get\/petstore-data-get[2.3:34]","start":1703043451679,"end":1703043451978,"title":"src\/test\/java\/apisprueba\/get\/petstore-data-get[2.3:34] 22:37:31.679-22:37:31.978 Obtener información de un usuario por nombre de usuario"},{"id":7,"group":1,"content":"src\/test\/java\/apisprueba\/get\/petstore-data-get[2.4:35]","start":1703043451982,"end":1703043452261,"title":"src\/test\/java\/apisprueba\/get\/petstore-data-get[2.4:35] 22:37:31.982-22:37:32.261 Obtener información de un usuario por nombre de usuario"},{"id":8,"group":1,"content":"src\/test\/java\/apisprueba\/get\/petstore-data-get[2.5:36]","start":1703043452265,"end":1703043452554,"title":"src\/test\/java\/apisprueba\/get\/petstore-data-get[2.5:36] 22:37:32.265-22:37:32.554 Obtener información de un usuario por nombre de usuario"},{"id":9,"group":1,"content":"src\/test\/java\/apisprueba\/get\/petstore-data-get[3.1:48]","start":1703043452558,"end":1703043452843,"title":"src\/test\/java\/apisprueba\/get\/petstore-data-get[3.1:48] 22:37:32.558-22:37:32.843 Logearse en el sistema"},{"id":10,"group":1,"content":"src\/test\/java\/apisprueba\/get\/petstore-data-get[3.2:49]","start":1703043452847,"end":1703043453130,"title":"src\/test\/java\/apisprueba\/get\/petstore-data-get[3.2:49] 22:37:32.847-22:37:33.130 Logearse en el sistema"},{"id":11,"group":1,"content":"src\/test\/java\/apisprueba\/get\/petstore-data-get[3.3:50]","start":1703043453134,"end":1703043453415,"title":"src\/test\/java\/apisprueba\/get\/petstore-data-get[3.3:50] 22:37:33.134-22:37:33.415 Logearse en el sistema"},{"id":12,"group":1,"content":"src\/test\/java\/apisprueba\/get\/petstore-data-get[3.4:51]","start":1703043453420,"end":1703043453697,"title":"src\/test\/java\/apisprueba\/get\/petstore-data-get[3.4:51] 22:37:33.420-22:37:33.697 Logearse en el sistema"},{"id":13,"group":1,"content":"src\/test\/java\/apisprueba\/get\/petstore-data-get[3.5:52]","start":1703043453701,"end":1703043453984,"title":"src\/test\/java\/apisprueba\/get\/petstore-data-get[3.5:52] 22:37:33.701-22:37:33.984 Logearse en el sistema"},{"id":14,"group":1,"content":"src\/test\/java\/apisprueba\/get\/petstore-data-get[4.1:66]","start":1703043453992,"end":1703043454278,"title":"src\/test\/java\/apisprueba\/get\/petstore-data-get[4.1:66] 22:37:33.992-22:37:34.278 Actualizar el nombre y el correo"},{"id":15,"group":1,"content":"src\/test\/java\/apisprueba\/get\/petstore-data-get[4.2:67]","start":1703043454282,"end":1703043454562,"title":"src\/test\/java\/apisprueba\/get\/petstore-data-get[4.2:67] 22:37:34.282-22:37:34.562 Actualizar el nombre y el correo"},{"id":16,"group":1,"content":"src\/test\/java\/apisprueba\/get\/petstore-data-get[4.3:68]","start":1703043454565,"end":1703043454854,"title":"src\/test\/java\/apisprueba\/get\/petstore-data-get[4.3:68] 22:37:34.565-22:37:34.854 Actualizar el nombre y el correo"},{"id":17,"group":1,"content":"src\/test\/java\/apisprueba\/get\/petstore-data-get[5.1:79]","start":1703043454857,"end":1703043455139,"title":"src\/test\/java\/apisprueba\/get\/petstore-data-get[5.1:79] 22:37:34.857-22:37:35.139 Eliminar Usuario"},{"id":18,"group":1,"content":"src\/test\/java\/apisprueba\/get\/petstore-data-get[5.2:80]","start":1703043455142,"end":1703043455427,"title":"src\/test\/java\/apisprueba\/get\/petstore-data-get[5.2:80] 22:37:35.142-22:37:35.427 Eliminar Usuario"},{"id":19,"group":1,"content":"src\/test\/java\/apisprueba\/get\/petstore-data-get[5.3:81]","start":1703043455431,"end":1703043455708,"title":"src\/test\/java\/apisprueba\/get\/petstore-data-get[5.3:81] 22:37:35.431-22:37:35.708 Eliminar Usuario"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

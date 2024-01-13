@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/geonames\/get\/geographical-data-get[1:12]","start":1703038345181,"end":1703038346555,"title":"src\/test\/java\/geonames\/get\/geographical-data-get[1:12] 21:12:25.181-21:12:26.555 Registrar Usuario","className":"failed"},{"id":2,"group":1,"content":"src\/test\/java\/geonames\/get\/geographical-data-get[2:18]","start":1703038346561,"end":1703038346865,"title":"src\/test\/java\/geonames\/get\/geographical-data-get[2:18] 21:12:26.561-21:12:26.865 Obtener información de un usuario por nombre de usuario","className":"failed"},{"id":3,"group":1,"content":"src\/test\/java\/geonames\/get\/geographical-data-get[3:24]","start":1703038346871,"end":1703038347151,"title":"src\/test\/java\/geonames\/get\/geographical-data-get[3:24] 21:12:26.871-21:12:27.151 Logearse en el sistena"},{"id":4,"group":1,"content":"src\/test\/java\/geonames\/get\/geographical-data-get[4:33]","start":1703038347156,"end":1703038347433,"title":"src\/test\/java\/geonames\/get\/geographical-data-get[4:33] 21:12:27.156-21:12:27.433 Actualizar el nombre y el correo","className":"failed"},{"id":5,"group":1,"content":"src\/test\/java\/geonames\/get\/geographical-data-get[5:40]","start":1703038347439,"end":1703038347737,"title":"src\/test\/java\/geonames\/get\/geographical-data-get[5:40] 21:12:27.439-21:12:27.737 Eliminar Usuario","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

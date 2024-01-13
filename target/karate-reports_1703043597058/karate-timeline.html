@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/apisprueba\/get\/petstore-data-get[4.1:66]","start":1703043583823,"end":1703043585086,"title":"src\/test\/java\/apisprueba\/get\/petstore-data-get[4.1:66] 22:39:43.823-22:39:45.086 Actualizar el nombre y el correo"},{"id":2,"group":1,"content":"src\/test\/java\/apisprueba\/get\/petstore-data-get[4.2:67]","start":1703043585092,"end":1703043585374,"title":"src\/test\/java\/apisprueba\/get\/petstore-data-get[4.2:67] 22:39:45.092-22:39:45.374 Actualizar el nombre y el correo"},{"id":3,"group":1,"content":"src\/test\/java\/apisprueba\/get\/petstore-data-get[4.3:68]","start":1703043585379,"end":1703043585661,"title":"src\/test\/java\/apisprueba\/get\/petstore-data-get[4.3:68] 22:39:45.379-22:39:45.661 Actualizar el nombre y el correo"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

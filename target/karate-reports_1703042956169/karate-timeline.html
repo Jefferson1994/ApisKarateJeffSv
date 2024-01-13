@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/geonames\/get\/petstore-data-get[3.1:48]","start":1703042623762,"end":1703042625122,"title":"src\/test\/java\/geonames\/get\/petstore-data-get[3.1:48] 22:23:43.762-22:23:45.122 Logearse en el sistema"},{"id":2,"group":1,"content":"src\/test\/java\/geonames\/get\/petstore-data-get[3.2:49]","start":1703042625128,"end":1703042625408,"title":"src\/test\/java\/geonames\/get\/petstore-data-get[3.2:49] 22:23:45.128-22:23:45.408 Logearse en el sistema"},{"id":3,"group":1,"content":"src\/test\/java\/geonames\/get\/petstore-data-get[3.3:50]","start":1703042625412,"end":1703042625706,"title":"src\/test\/java\/geonames\/get\/petstore-data-get[3.3:50] 22:23:45.412-22:23:45.706 Logearse en el sistema"},{"id":4,"group":1,"content":"src\/test\/java\/geonames\/get\/petstore-data-get[3.4:51]","start":1703042625710,"end":1703042625988,"title":"src\/test\/java\/geonames\/get\/petstore-data-get[3.4:51] 22:23:45.710-22:23:45.988 Logearse en el sistema"},{"id":5,"group":1,"content":"src\/test\/java\/geonames\/get\/petstore-data-get[3.5:52]","start":1703042625992,"end":1703042626273,"title":"src\/test\/java\/geonames\/get\/petstore-data-get[3.5:52] 22:23:45.992-22:23:46.273 Logearse en el sistema"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

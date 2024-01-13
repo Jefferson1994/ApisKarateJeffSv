@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+      posthog.register_once({
+        karate_version:"1.2.0.RC5"
+      });
+      posthog.capture('report_feature');
+    </script>    
+    <title>src.test.java.geonames.get.petstore-data-get</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">3</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2023-12-19 09:47:55 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[2.1:27]"><span>[2.1:27]</span> <span>Obtener información de un usuario por nombre de usuario</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[2.2:28]"><span>[2.2:28]</span> <span>Obtener información de un usuario por nombre de usuario</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[2.3:29]"><span>[2.3:29]</span> <span>Obtener información de un usuario por nombre de usuario</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/geonames/get/petstore-data-get.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Ejercicio de APIS opcion 3</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2.1:27]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2.1:27]</span>
+                <span class="scenario-name">Obtener información de un usuario por nombre de usuario</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1172</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2.1:27]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2.1:27]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url api.baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2.1:27]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def username = &#39;Jeff19944&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2.1:27]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def id = 1104707345</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2.1:27]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def contra = &#39;123456&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2.1:27]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.11">
+      <div class="step-ref bg-step">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def GetjsonresponseBien = read(&quot;successful-response-get.json&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">48</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1102</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.20">21:47:54.503 request:
+1 &gt; GET https://petstore.swagger.io/
+1 &gt; Host: petstore.swagger.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_402)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+21:47:55.143 response time in milliseconds: 638
+1 &lt; 200
+1 &lt; Date: Wed, 20 Dec 2023 02:51:22 GMT
+1 &lt; Content-Type: text/html
+1 &lt; Connection: keep-alive
+1 &lt; Server: nginx
+1 &lt; Last-Modified: Thu, 14 Dec 2023 14:03:30 GMT
+1 &lt; Vary: Accept-Encoding
+1 &lt; ETag: &quot;657b0b32-147&quot;
+1 &lt; Expires: Thu, 21 Dec 2023 02:51:22 GMT
+1 &lt; Cache-Control: max-age=86400
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET, POST, OPTIONS
+1 &lt; Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+1 &lt; Accept-Ranges: bytes
+&lt;!-- HTML for static distribution bundle build --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Swagger UI&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;./swagger-ui.css&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;index.css&quot; /&gt;
+    &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;./favicon-32x32.png&quot; sizes=&quot;32x32&quot; /&gt;
+    &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;./favicon-16x16.png&quot; sizes=&quot;16x16&quot; /&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;div id=&quot;swagger-ui&quot;&gt;&lt;/div&gt;
+    &lt;script src=&quot;./swagger-ui-bundle.js&quot; charset=&quot;UTF-8&quot;&gt; &lt;/script&gt;
+    &lt;script src=&quot;./swagger-ui-standalone-preset.js&quot; charset=&quot;UTF-8&quot;&gt; &lt;/script&gt;
+    &lt;script src=&quot;./swagger-initializer.js&quot; charset=&quot;UTF-8&quot;&gt; &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;/v2/user&#39;, &#39;username&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.23">
+      <div class="step-ref failed">23</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match $ == GetjsonresponseBien</span>
+      </div>
+    </div>
+    <div class="time-cell failed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.23">21:47:55.161 src/test/java/geonames/get/petstore-data-get.feature:23
+And match $ == GetjsonresponseBien
+match failed: EQUALS
+  $ | data types don&#39;t match (STRING:MAP)
+  &#39;&lt;!-- HTML for static distribution bundle build --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Swagger UI&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;./swagger-ui.css&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;index.css&quot; /&gt;
+    &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;./favicon-32x32.png&quot; sizes=&quot;32x32&quot; /&gt;
+    &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;./favicon-16x16.png&quot; sizes=&quot;16x16&quot; /&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;div id=&quot;swagger-ui&quot;&gt;&lt;/div&gt;
+    &lt;script src=&quot;./swagger-ui-bundle.js&quot; charset=&quot;UTF-8&quot;&gt; &lt;/script&gt;
+    &lt;script src=&quot;./swagger-ui-standalone-preset.js&quot; charset=&quot;UTF-8&quot;&gt; &lt;/script&gt;
+    &lt;script src=&quot;./swagger-initializer.js&quot; charset=&quot;UTF-8&quot;&gt; &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;&#39;
+  {&quot;id&quot;:&quot;#number&quot;,&quot;username&quot;:&quot;#string&quot;,&quot;firstName&quot;:&quot;#string&quot;,&quot;lastName&quot;:&quot;#string&quot;,&quot;email&quot;:&quot;#string&quot;,&quot;password&quot;:&quot;#string&quot;,&quot;phone&quot;:&quot;#string&quot;,&quot;userStatus&quot;:&quot;#number&quot;}
+
+src/test/java/geonames/get/petstore-data-get.feature:23
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2.2:28]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2.2:28]</span>
+                <span class="scenario-name">Obtener información de un usuario por nombre de usuario</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>279</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2.2:28]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2.2:28]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url api.baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2.2:28]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def username = &#39;Jeff19944&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2.2:28]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def id = 1104707345</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2.2:28]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def contra = &#39;123456&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2.2:28]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.11">
+      <div class="step-ref bg-step">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def GetjsonresponseBien = read(&quot;successful-response-get.json&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">275</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.20">21:47:55.175 request:
+1 &gt; GET https://petstore.swagger.io/
+1 &gt; Host: petstore.swagger.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_402)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+21:47:55.447 response time in milliseconds: 272
+1 &lt; 200
+1 &lt; Date: Wed, 20 Dec 2023 02:51:22 GMT
+1 &lt; Content-Type: text/html
+1 &lt; Connection: keep-alive
+1 &lt; Server: nginx
+1 &lt; Last-Modified: Thu, 14 Dec 2023 14:03:30 GMT
+1 &lt; Vary: Accept-Encoding
+1 &lt; ETag: &quot;657b0b32-147&quot;
+1 &lt; Expires: Thu, 21 Dec 2023 02:51:22 GMT
+1 &lt; Cache-Control: max-age=86400
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET, POST, OPTIONS
+1 &lt; Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+1 &lt; Accept-Ranges: bytes
+&lt;!-- HTML for static distribution bundle build --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Swagger UI&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;./swagger-ui.css&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;index.css&quot; /&gt;
+    &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;./favicon-32x32.png&quot; sizes=&quot;32x32&quot; /&gt;
+    &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;./favicon-16x16.png&quot; sizes=&quot;16x16&quot; /&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;div id=&quot;swagger-ui&quot;&gt;&lt;/div&gt;
+    &lt;script src=&quot;./swagger-ui-bundle.js&quot; charset=&quot;UTF-8&quot;&gt; &lt;/script&gt;
+    &lt;script src=&quot;./swagger-ui-standalone-preset.js&quot; charset=&quot;UTF-8&quot;&gt; &lt;/script&gt;
+    &lt;script src=&quot;./swagger-initializer.js&quot; charset=&quot;UTF-8&quot;&gt; &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;/v2/user&#39;, &#39;&quot;user&quot;&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.23">
+      <div class="step-ref failed">23</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match $ == GetjsonresponseBien</span>
+      </div>
+    </div>
+    <div class="time-cell failed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.23">21:47:55.449 src/test/java/geonames/get/petstore-data-get.feature:23
+And match $ == GetjsonresponseBien
+match failed: EQUALS
+  $ | data types don&#39;t match (STRING:MAP)
+  &#39;&lt;!-- HTML for static distribution bundle build --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Swagger UI&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;./swagger-ui.css&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;index.css&quot; /&gt;
+    &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;./favicon-32x32.png&quot; sizes=&quot;32x32&quot; /&gt;
+    &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;./favicon-16x16.png&quot; sizes=&quot;16x16&quot; /&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;div id=&quot;swagger-ui&quot;&gt;&lt;/div&gt;
+    &lt;script src=&quot;./swagger-ui-bundle.js&quot; charset=&quot;UTF-8&quot;&gt; &lt;/script&gt;
+    &lt;script src=&quot;./swagger-ui-standalone-preset.js&quot; charset=&quot;UTF-8&quot;&gt; &lt;/script&gt;
+    &lt;script src=&quot;./swagger-initializer.js&quot; charset=&quot;UTF-8&quot;&gt; &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;&#39;
+  {&quot;id&quot;:&quot;#number&quot;,&quot;username&quot;:&quot;#string&quot;,&quot;firstName&quot;:&quot;#string&quot;,&quot;lastName&quot;:&quot;#string&quot;,&quot;email&quot;:&quot;#string&quot;,&quot;password&quot;:&quot;#string&quot;,&quot;phone&quot;:&quot;#string&quot;,&quot;userStatus&quot;:&quot;#number&quot;}
+
+src/test/java/geonames/get/petstore-data-get.feature:23
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2.3:29]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2.3:29]</span>
+                <span class="scenario-name">Obtener información de un usuario por nombre de usuario</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>281</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2.3:29]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2.3:29]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url api.baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2.3:29]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def username = &#39;Jeff19944&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2.3:29]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def id = 1104707345</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2.3:29]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def contra = &#39;123456&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2.3:29]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.11">
+      <div class="step-ref bg-step">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def GetjsonresponseBien = read(&quot;successful-response-get.json&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">279</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.20">21:47:55.458 request:
+1 &gt; GET https://petstore.swagger.io/
+1 &gt; Host: petstore.swagger.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_402)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+21:47:55.735 response time in milliseconds: 277
+1 &lt; 200
+1 &lt; Date: Wed, 20 Dec 2023 02:51:23 GMT
+1 &lt; Content-Type: text/html
+1 &lt; Connection: keep-alive
+1 &lt; Server: nginx
+1 &lt; Last-Modified: Thu, 14 Dec 2023 14:03:30 GMT
+1 &lt; Vary: Accept-Encoding
+1 &lt; ETag: &quot;657b0b32-147&quot;
+1 &lt; Expires: Thu, 21 Dec 2023 02:51:23 GMT
+1 &lt; Cache-Control: max-age=86400
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET, POST, OPTIONS
+1 &lt; Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+1 &lt; Accept-Ranges: bytes
+&lt;!-- HTML for static distribution bundle build --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Swagger UI&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;./swagger-ui.css&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;index.css&quot; /&gt;
+    &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;./favicon-32x32.png&quot; sizes=&quot;32x32&quot; /&gt;
+    &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;./favicon-16x16.png&quot; sizes=&quot;16x16&quot; /&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;div id=&quot;swagger-ui&quot;&gt;&lt;/div&gt;
+    &lt;script src=&quot;./swagger-ui-bundle.js&quot; charset=&quot;UTF-8&quot;&gt; &lt;/script&gt;
+    &lt;script src=&quot;./swagger-ui-standalone-preset.js&quot; charset=&quot;UTF-8&quot;&gt; &lt;/script&gt;
+    &lt;script src=&quot;./swagger-initializer.js&quot; charset=&quot;UTF-8&quot;&gt; &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;/v2/user&#39;, &#39;&quot;jk2&quot;&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.23">
+      <div class="step-ref failed">23</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match $ == GetjsonresponseBien</span>
+      </div>
+    </div>
+    <div class="time-cell failed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.23">21:47:55.737 src/test/java/geonames/get/petstore-data-get.feature:23
+And match $ == GetjsonresponseBien
+match failed: EQUALS
+  $ | data types don&#39;t match (STRING:MAP)
+  &#39;&lt;!-- HTML for static distribution bundle build --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Swagger UI&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;./swagger-ui.css&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;index.css&quot; /&gt;
+    &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;./favicon-32x32.png&quot; sizes=&quot;32x32&quot; /&gt;
+    &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;./favicon-16x16.png&quot; sizes=&quot;16x16&quot; /&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;div id=&quot;swagger-ui&quot;&gt;&lt;/div&gt;
+    &lt;script src=&quot;./swagger-ui-bundle.js&quot; charset=&quot;UTF-8&quot;&gt; &lt;/script&gt;
+    &lt;script src=&quot;./swagger-ui-standalone-preset.js&quot; charset=&quot;UTF-8&quot;&gt; &lt;/script&gt;
+    &lt;script src=&quot;./swagger-initializer.js&quot; charset=&quot;UTF-8&quot;&gt; &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;&#39;
+  {&quot;id&quot;:&quot;#number&quot;,&quot;username&quot;:&quot;#string&quot;,&quot;firstName&quot;:&quot;#string&quot;,&quot;lastName&quot;:&quot;#string&quot;,&quot;email&quot;:&quot;#string&quot;,&quot;password&quot;:&quot;#string&quot;,&quot;phone&quot;:&quot;#string&quot;,&quot;userStatus&quot;:&quot;#number&quot;}
+
+src/test/java/geonames/get/petstore-data-get.feature:23
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
